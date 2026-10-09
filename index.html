@@ -492,59 +492,59 @@ html{scroll-behavior:auto}
 
 /* FOTO UNICA SOU EMILLY END */
 
-/* FOTO ONLINE EMILLY START */
 
-.session.online h3 {
-    margin: 24px 0 12px !important;
-}
+
+/* FOTO ONLINE RETANGULAR START */
 
 .session.online .online-photo {
-    position: relative !important;
     display: block !important;
-    align-self: flex-end !important;
+    position: relative !important;
 
-    width: 190px !important;
-    height: 215px !important;
-    max-width: 55% !important;
+    /* Alinhamento à esquerda */
+    align-self: flex-start !important;
+    margin: 20px 0 24px 0 !important;
 
+    /* Foto retangular */
+    width: min(100%, 340px) !important;
+    height: 225px !important;
+    max-width: 100% !important;
+    max-height: none !important;
+
+    /* Sem deformações */
     object-fit: cover !important;
     object-position: center 25% !important;
 
-    border-radius: 110px 110px 6px 6px !important;
+    /* Moldura discreta */
+    border-radius: 6px !important;
 
-    margin: auto 5px 18px auto !important;
+    /* Remover efeito esfumado anterior */
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+
+    /* Remover deslocamentos antigos */
+    transform: none !important;
+    inset: auto !important;
+    float: none !important;
+
     z-index: 2 !important;
-
-    -webkit-mask-image: linear-gradient(
-        to bottom, black 85%, transparent 100%
-    );
-    mask-image: linear-gradient(
-        to bottom, black 85%, transparent 100%
-    );
 }
 
-.session.online .session-foot {
-    position: relative;
-    z-index: 3;
-}
-
-/* MOBILE */
+/* Mobile */
 @media (max-width: 760px) {
 
-    .session.online {
+    .session.online .online-photo {
+        align-self: flex-start !important;
+        width: min(100%, 320px) !important;
         height: auto !important;
-        min-height: 440px !important;
+        aspect-ratio: 4 / 3 !important;
+        margin: 20px 0 24px 0 !important;
+        border-radius: 6px !important;
     }
 
-    .session.online .online-photo {
-        width: 155px !important;
-        height: 185px !important;
-        max-width: 55% !important;
-        margin: 14px 4px 20px auto !important;
-    }
 }
 
-/* FOTO ONLINE EMILLY END */
+/* FOTO ONLINE RETANGULAR END */
+
 </style>
 </head>
 <body>
