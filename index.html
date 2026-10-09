@@ -491,6 +491,60 @@ html{scroll-behavior:auto}
 }
 
 /* FOTO UNICA SOU EMILLY END */
+
+/* FOTO ONLINE EMILLY START */
+
+.session.online h3 {
+    margin: 24px 0 12px !important;
+}
+
+.session.online .online-photo {
+    position: relative !important;
+    display: block !important;
+    align-self: flex-end !important;
+
+    width: 190px !important;
+    height: 215px !important;
+    max-width: 55% !important;
+
+    object-fit: cover !important;
+    object-position: center 25% !important;
+
+    border-radius: 110px 110px 6px 6px !important;
+
+    margin: auto 5px 18px auto !important;
+    z-index: 2 !important;
+
+    -webkit-mask-image: linear-gradient(
+        to bottom, black 85%, transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom, black 85%, transparent 100%
+    );
+}
+
+.session.online .session-foot {
+    position: relative;
+    z-index: 3;
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+
+    .session.online {
+        height: auto !important;
+        min-height: 440px !important;
+    }
+
+    .session.online .online-photo {
+        width: 155px !important;
+        height: 185px !important;
+        max-width: 55% !important;
+        margin: 14px 4px 20px auto !important;
+    }
+}
+
+/* FOTO ONLINE EMILLY END */
 </style>
 </head>
 <body>
@@ -549,8 +603,9 @@ html{scroll-behavior:auto}
 </div></section>
 <section class="sessions section-pad" id="atendimentos"><div class="container"><div class="sessions-head reveal"><div><div class="eyebrow">04 / Como podemos nos encontrar</div><h2 class="section-title">O cuidado acontece <em>onde você estiver.</em></h2></div><p>O mesmo compromisso com a escuta, a ética e o acolhimento em diferentes modalidades de atendimento.</p></div>
 <div class="session-grid">
-<article class="session online reveal"><span class="session-number">MODALIDADE 01 — ONLINE</span><h3>De onde<br>você estiver.</h3><p>Atendimento psicológico online para jovens e adultos, de qualquer lugar do Brasil.</p><div class="session-foot"><span>50 minutos por sessão</span><span aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11 37L37 11 M20 11H37V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></article>
-<article class="session presencial reveal"><span class="session-number">MODALIDADE 02 — PRESENCIAL</span><img class="session-portrait" src="assets/emilly-presencial.jpg" alt="Emilly Carmo em pé, com roupa branca, no ambiente de atendimento"><h3>Um espaço<br>de presença.</h3><p>Atendimento presencial em ambiente dedicado à escuta e ao acolhimento.</p><div class="emilly-locations"><span class="emilly-locations-title">LOCAIS DE ATENDIMENTO</span><div class="emilly-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div class="emilly-location-text"><strong>Hotel Atmosfera</strong><span>Rua São Domingos, 588 · Santa Mônica, Feira de Santana — BA</span><a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Atmosfera%2C+Feira+de+Santana%2C+BA&destination_place_id=ChIJt4lpN3U3FAcRIBDNVGf6rqU" target="_blank" rel="noopener noreferrer">Como chegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19L19 5M9 5h10v10"/></svg></a></div></div><div class="emilly-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div class="emilly-location-text"><strong>Grupo Mais Saúde — Unidade Solução Médicas</strong><span>Rua Genésio Cardoso, nº 153-B · Santo Estêvão — BA · Próximo ao Colégio Viramundo Kids</span><a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Gen%C3%A9sio+Cardoso%2C+153-B%2C+Santo+Est%C3%AAv%C3%A3o%2C+Bahia%2C+Brasil" target="_blank" rel="noopener noreferrer">Como chegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19L19 5M9 5h10v10"/></svg></a></div></div></div><div class="session-foot"><span>50 minutos por sessão</span><span aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11 37L37 11 M20 11H37V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></article>
+<article class="session online reveal"><span class="session-number">MODALIDADE 01 — ONLINE</span><h3>De onde<br>você estiver.</h3><p>Atendimento psicológico online para jovens e adultos, de qualquer lugar do Brasil.</p>
+<img class="online-photo" src="assets/emilly-presencial.jpg" alt="Emilly Carmo em pé, com roupa branca, no ambiente de atendimento"><div class="session-foot"><span>50 minutos por sessão</span><span aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11 37L37 11 M20 11H37V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></article>
+<article class="session presencial reveal"><span class="session-number">MODALIDADE 02 — PRESENCIAL</span><h3>Um espaço<br>de presença.</h3><p>Atendimento presencial em ambiente dedicado à escuta e ao acolhimento.</p><div class="emilly-locations"><span class="emilly-locations-title">LOCAIS DE ATENDIMENTO</span><div class="emilly-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div class="emilly-location-text"><strong>Hotel Atmosfera</strong><span>Rua São Domingos, 588 · Santa Mônica, Feira de Santana — BA</span><a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Atmosfera%2C+Feira+de+Santana%2C+BA&destination_place_id=ChIJt4lpN3U3FAcRIBDNVGf6rqU" target="_blank" rel="noopener noreferrer">Como chegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19L19 5M9 5h10v10"/></svg></a></div></div><div class="emilly-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div class="emilly-location-text"><strong>Grupo Mais Saúde — Unidade Solução Médicas</strong><span>Rua Genésio Cardoso, nº 153-B · Santo Estêvão — BA · Próximo ao Colégio Viramundo Kids</span><a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Gen%C3%A9sio+Cardoso%2C+153-B%2C+Santo+Est%C3%AAv%C3%A3o%2C+Bahia%2C+Brasil" target="_blank" rel="noopener noreferrer">Como chegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19L19 5M9 5h10v10"/></svg></a></div></div></div><div class="session-foot"><span>50 minutos por sessão</span><span aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11 37L37 11 M20 11H37V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></article>
 </div><p class="sessions-note">As informações de local e disponibilidade serão confirmadas diretamente no agendamento.</p>
 </div></section>
 <section class="letter section-pad" id="carta"><div class="container letter-inner">
