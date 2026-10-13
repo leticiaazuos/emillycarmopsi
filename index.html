@@ -545,6 +545,170 @@ html{scroll-behavior:auto}
 
 /* FOTO ONLINE RETANGULAR END */
 
+
+/* MOBILE PRESENCIAL FIX START */
+
+@media (max-width: 760px) {
+
+  /* Card em uma única coluna */
+  #atendimentos .session.presencial {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+
+    grid-template-columns: none !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding: 32px 26px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Remover restrições horizontais */
+  #atendimentos .session.presencial > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Modalidade no topo */
+  #atendimentos .session.presencial
+  .session-number {
+    order: 0 !important;
+    width: 100% !important;
+    margin: 0 0 24px !important;
+  }
+
+  /* Título abaixo da modalidade */
+  #atendimentos .session.presencial h3 {
+    order: 1 !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 0 0 18px !important;
+
+    font-size: clamp(
+      42px, 10vw, 56px
+    ) !important;
+
+    line-height: 1.04 !important;
+    text-align: left !important;
+  }
+
+  /* Descrição abaixo do título */
+  #atendimentos .session.presencial > p {
+    order: 2 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 0 28px !important;
+    position: static !important;
+
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Localizações ocupando toda a largura */
+  #atendimentos .session.presencial
+  .emilly-locations {
+    order: 3 !important;
+
+    display: block !important;
+    position: relative !important;
+    float: none !important;
+
+    grid-column: 1 / -1 !important;
+    grid-area: auto !important;
+
+    align-self: stretch !important;
+    flex: 0 0 auto !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 0 28px !important;
+    padding-top: 24px !important;
+
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Cada estabelecimento */
+  #atendimentos .session.presencial
+  .emilly-location {
+    display: grid !important;
+
+    grid-template-columns:
+      20px minmax(0, 1fr) !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    align-items: start !important;
+  }
+
+  /* Texto com quebra normal */
+  #atendimentos .session.presencial
+  .emilly-location-text {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  #atendimentos .session.presencial
+  .emilly-location strong {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+
+  #atendimentos .session.presencial
+  .emilly-location-text > span {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Botões Como chegar */
+  #atendimentos .session.presencial
+  .emilly-location a {
+    display: inline-flex !important;
+    align-items: center !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+  }
+
+  /* Duração no rodapé do card */
+  #atendimentos .session.presencial
+  .session-foot {
+    order: 4 !important;
+    width: 100% !important;
+    margin-top: 4px !important;
+  }
+}
+
+/* MOBILE PRESENCIAL FIX END */
+
 </style>
 </head>
 <body>
